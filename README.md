@@ -9,4 +9,7 @@ Heavily inspired by The Coding Train's video: "Coding Challenge #158: Shape Clas
 
 Link: https://www.youtube.com/watch?v=3MqJzMvHE3E&tf
 
-Created for Mr Ayres, Head of Computer Science department, Westbourne School. (2021)
+
+Created for Mr Ayres, Head of Computer Science department, Westbourne School.
+
+Made by Mathias Van Nuland (2021)
