@@ -2,7 +2,9 @@ let letterClassifier;
 let canvas;
 let resultsDiv;
 let clearButton;
+let speakButton;
 let inputImage;
+let label;
 
 function setup() {
 	canvas = createCanvas(400, 400);
@@ -27,6 +29,10 @@ function setup() {
 	clearButton.mousePressed(function () {
 		background(255);
 	});
+	speakButton = createButton("Speak!");
+	speakButton.mousePressed(function () {
+		speechSynthesis.speak(new SpeechSynthesisUtterance(label));
+	});
 }
 
 function modelLoaded() {
@@ -40,7 +46,7 @@ function gotResults(err, results) {
 		return;
 	}
 
-	let label = results[0].label;
+	label = results[0].label;
 	let confidence = nf(100 * results[0].confidence, 2, 2);
 
 	resultsDiv.html(label + " " + confidence + "%");
