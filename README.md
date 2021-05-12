@@ -1,5 +1,5 @@
 # Letter Classifier!
-The AI will try to classify your drawings of letters! (only A-E)
+The AI will try to classify your drawings of letters! (only A-E because chrome does not let me load 3000+ images into memory.)
 
 # Website!
 https://mathiasvan.github.io/
