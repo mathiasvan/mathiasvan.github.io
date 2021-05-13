@@ -5,7 +5,7 @@ The AI will try to classify your drawings of letters! (only A-E because chrome d
 https://mathiasvan.github.io/
 
 # Credits:
-Heavily inspired by The Coding Train's [video] (https://www.youtube.com/watch?v=3MqJzMvHE3E&tf): "Coding Challenge #158: Shape Classifier Neural Network with ml5.js".
+Heavily inspired by The Coding Train's [video](https://www.youtube.com/watch?v=3MqJzMvHE3E&tf): "Coding Challenge #158: Shape Classifier Neural Network with ml5.js".
 
 Link: https://www.youtube.com/watch?v=3MqJzMvHE3E&tf
 
