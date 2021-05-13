@@ -7,9 +7,6 @@ https://mathiasvan.github.io/
 # Credits:
 Heavily inspired by The Coding Train's [video](https://www.youtube.com/watch?v=3MqJzMvHE3E&tf): "Coding Challenge #158: Shape Classifier Neural Network with ml5.js".
 
-Link: https://www.youtube.com/watch?v=3MqJzMvHE3E&tf
-
-
 Created for Mr Ayres, Head of Computer Science department, Westbourne School.
 
 Made by Mathias Van Nuland (2021)
