@@ -1,6 +1,6 @@
 # Website!
 
-It is not optimised for mobile yet but should work quite well in the browser.
+It is not optimised for mobile yet but should work quite well on laptop and desktop.
 
 https://mathiasvan.github.io/
 
