@@ -23,7 +23,7 @@ function setup() {
 	inputImage = createGraphics(64, 64);
 	letterClassifier.load(modelDetails, modelLoaded);
 	background(255);
-	resultsDiv = createDiv("Loading Model...");
+	resultsDiv = createDiv("Loading Model...").class("resultsDiv");
 
 	clearButton = createButton("Clear Screen.");
 	clearButton.mousePressed(function () {
