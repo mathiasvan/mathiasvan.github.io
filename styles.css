@@ -90,6 +90,14 @@ a:hover {
 	flex: 1 1 0px;
 }
 
+/* * Instructions */
+.instructionsLetterClassifier {
+	position: absolute;
+	right: 0;
+	margin-right: 30px;
+}
+
+
 /* * Button */
 button {
 	border-radius: 45px;
@@ -154,5 +162,27 @@ footer {
 	}
 	.feature-box div {
 		font-size: 50px;
+	}
+}
+
+/* * Fixes for instructionsLetterClassifier */
+@media screen and (max-width: 1460px) {
+	.instructionsLetterClassifier ul {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 1300px) {
+	.instructionsLetterClassifier ul {
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 1160px) {
+	.instructionsLetterClassifier ul {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 1020px) {
+	.instructionsLetterClassifier {
+		display: none;
 	}
 }
