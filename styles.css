@@ -109,12 +109,18 @@ button {
 	cursor: pointer;
 	outline: none;
 	margin-top: 10px;
-	padding: 5px;
+	padding: 13px;
 }
 
 button:hover {
 	box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.3);
 	transform: translateY(-5px);
+}
+
+/* Button on home page. */
+.projectButton {
+	margin: auto;
+	display: block;
 }
 
 /* * Footer */
