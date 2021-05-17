@@ -1,5 +1,7 @@
 # Website!
 
+It is not optimised for mobile yet but should work quite well in the browser.
+
 https://mathiasvan.github.io/
 
 ## Letter Classifier!
