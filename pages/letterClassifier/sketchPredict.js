@@ -3,6 +3,9 @@ let canvas;
 let resultsDiv;
 let clearButton;
 let speakButton;
+let cameraButton;
+let isCameraOn = false;
+let capture;
 let inputImage;
 let label;
 
@@ -32,6 +35,18 @@ function setup() {
 	speakButton = createButton("Speak!");
 	speakButton.mousePressed(function () {
 		speechSynthesis.speak(new SpeechSynthesisUtterance(label));
+	});
+	capture = createCapture(VIDEO);
+	capture.size(width, height);
+	capture.hide();
+	cameraButton = createButton("Switch to camera!").id("camButton");
+	cameraButton.mousePressed(function () {
+		if (isCameraOn) {
+			isCameraOn = false;
+			background(255);
+		} else {
+			isCameraOn = true;
+		}
 	});
 }
 
@@ -63,10 +78,16 @@ function classifyImage() {
 }
 
 function draw() {
-	if (mouseIsPressed) {
+	let camButton = document.getElementById("camButton");
+	if (isCameraOn) {
+		image(capture, 0, 0, width, height);
+		filter(THRESHOLD, 0.4);
+		camButton.innerHTML = "Switch to mouse!";
+	} else if (mouseIsPressed) {
 		// *** strokeweight configuration ***
 		strokeWeight(20);
 		line(mouseX, mouseY, pmouseX, pmouseY);
+		camButton.innerHTML = "Switch to camera!";
 	}
 }
 
