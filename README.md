@@ -20,4 +20,8 @@ Heavily inspired by The Coding Train's [video](https://www.youtube.com/watch?v=3
 ## Other
 Created for Mr Ayres, Head of Computer Science department, Westbourne School.
 
+# Todo:
+- [ ] Support mobile devices.
+- [ ] Fix some overflow issues.
+
 Made by Mathias Van Nuland
