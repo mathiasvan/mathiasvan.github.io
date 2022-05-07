@@ -14,8 +14,12 @@ You are now able to draw on paper and show it to the AI through the webcam!
 
 # Credits:
 
-Heavily inspired by The Coding Train's [video](https://www.youtube.com/watch?v=3MqJzMvHE3E&tf): "Coding Challenge #158: Shape Classifier Neural Network with ml5.js".
-
+## Letter Classifier (2021):
+Heavily inspired by The Coding Train's [video](https://www.youtube.com/watch?v=3MqJzMvHE3E&tf): "Coding Challenge #158: Shape Classifier Neural Network with ml5.js".<br>
 Created for Mr Ayres, Head of Computer Science department, Westbourne School.
 
-Made by Mathias Van Nuland (2021)
+# Todo:
+- [ ] Support mobile devices.
+- [ ] Fix some overflow issues.
+
+Made by Mathias Van Nuland
