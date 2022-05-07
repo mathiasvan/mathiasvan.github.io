@@ -6,11 +6,7 @@ https://mathiasvan.github.io/
 
 ## Letter Classifier!
 
-The AI will try to classify your drawings of letters! (only A-E because chrome does not let me load 3000+ images into memory.)
-
-### V2
-
-You are now able to draw on paper and show it to the AI through the webcam!
+The AI will try to classify your drawings of letters! (only A-E because Chrome does not let me load 3000+ images into memory.)
 
 # Credits:
 
