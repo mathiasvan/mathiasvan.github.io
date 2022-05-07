@@ -100,7 +100,7 @@ a:hover {
 /* * Button */
 button {
 	border-radius: 45px;
-	font-size: 30px;
+	font-size: 20px;
 	color: black;
 	background-color: white;
 	box-shadow: 0 8px 15px rgba(255, 255, 255, 0.26);
@@ -108,7 +108,7 @@ button {
 	cursor: pointer;
 	outline: none;
 	margin-top: 10px;
-	padding: 13px;
+	padding: 10px;
 }
 
 button:hover {
@@ -120,20 +120,28 @@ button:hover {
 .projectButton {
 	margin: auto;
 	display: block;
+	font-size: 30px;
+	padding: 13px;
 }
 
 /* * Footer */
-footer {
-	position: fixed;
-	width: 100%;
+footer,
+.footer {
+	/* position: fixed; */
+	/* width: 100%; */
+	height: 20px;
 	bottom: 0;
-	font-size: 15px;
 	text-align: center;
 	font-size: 15px;
 	padding: 10px;
 	color: white;
 	background-color: rgb(34, 34, 34);
 }
+
+section {
+	margin-bottom: 40px;
+}
+
 
 /* * Scrollbar */
 /* width */
@@ -165,6 +173,7 @@ footer {
 	.feature-box {
 		flex-flow: column wrap;
 	}
+
 	.feature-box div {
 		font-size: 50px;
 	}
@@ -176,18 +185,29 @@ footer {
 		font-size: 30px;
 	}
 }
+
 @media screen and (max-width: 1300px) {
 	.instructionsLetterClassifier ul {
 		font-size: 25px;
 	}
 }
+
 @media screen and (max-width: 1160px) {
 	.instructionsLetterClassifier ul {
 		font-size: 20px;
 	}
 }
+
 @media screen and (max-width: 1020px) {
 	.instructionsLetterClassifier {
 		display: none;
 	}
+}
+
+/* * Fix for annoying horizontal scroll on mobile */
+html,
+body {
+	user-select: none;
+	touch-action: none;
+	-webkit-user-select: none;
 }

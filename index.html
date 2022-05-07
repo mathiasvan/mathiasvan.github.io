@@ -1,44 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Home</title>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<header>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="projects.html">Projects</a></li>
-				</ul>
-			</nav>
-		</header>
-		<h1>Home</h1>
-		<h2>About Me:</h2>
-		<section>
-			<p id="age"></p>
-			<p>Check some of my projects out on this website!</p>
-			<a href="projects.html"
-				><button class="projectButton">Take me there!</button></a
-			>
-		</section>
-		<footer>&copy MVN · 2021 · All Rights Reserved</footer>
-	</body>
-	<script>
-		function getAge(DOB) {
-			var today = new Date();
-			var birthDate = new Date(DOB);
-			var age = today.getFullYear() - birthDate.getFullYear();
-			var m = today.getMonth() - birthDate.getMonth();
-			if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-				age = age - 1;
-			}
 
-			return age;
-		}
-		document.getElementById("age").innerHTML =
-			"I am " +
-			getAge("10/08/2007") +
-			" years old and I absolutely <strong><em>love</em></strong> programmming!";
-	</script>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="projects.html">Projects</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1>Home</h1>
+	<h2>About Me:</h2>
+	<section>
+		<p id="age"></p>
+		<p>Check some of my projects out on this website!</p>
+		<a href="projects.html"><button class="projectButton">Take me there!</button></a>
+	</section>
+	<footer>&copy MVN · 2021 · All Rights Reserved</footer>
+	<script src="findage.js"></script>
+</body>
+
 </html>

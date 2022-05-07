@@ -28,26 +28,28 @@ function setup() {
 	background(255);
 	resultsDiv = createDiv("Loading Model...").class("resultsDiv");
 
-	clearButton = createButton("Clear Screen.");
+	clearButton = createButton("Clear Screen");
 	clearButton.mousePressed(function () {
 		background(255);
 	});
-	speakButton = createButton("Speak!");
-	speakButton.mousePressed(function () {
-		speechSynthesis.speak(new SpeechSynthesisUtterance(label));
-	});
-	capture = createCapture(VIDEO);
-	capture.size(width, height);
-	capture.hide();
-	cameraButton = createButton("Switch to camera!").id("camButton");
-	cameraButton.mousePressed(function () {
-		if (isCameraOn) {
-			isCameraOn = false;
-			background(255);
-		} else {
-			isCameraOn = true;
-		}
-	});
+	// * The speak and camera button are useless.
+	// speakButton = createButton("Speak!");
+	// speakButton.mousePressed(function () {
+	// 	speechSynthesis.speak(new SpeechSynthesisUtterance(label));
+	// });
+	// capture = createCapture(VIDEO);
+	// capture.size(width, height);
+	// capture.hide();
+	// cameraButton = createButton("Switch to camera!").id("camButton");
+	// cameraButton.mousePressed(function () {
+	// 	if (isCameraOn) {
+	// 		isCameraOn = false;
+	// 		background(255);
+	// 	} else {
+	// 		isCameraOn = true;
+	// 	}
+	// });
+	footer = createDiv("&copy MVN · 2021 · All Rights Reserved").class("footer")
 }
 
 function modelLoaded() {
@@ -78,16 +80,21 @@ function classifyImage() {
 }
 
 function draw() {
-	let camButton = document.getElementById("camButton");
-	if (isCameraOn) {
-		image(capture, 0, 0, width, height);
-		filter(THRESHOLD, 0.4);
-		camButton.innerHTML = "Switch to mouse!";
-	} else if (mouseIsPressed) {
+	// let camButton = document.getElementById("camButton");
+	// if (isCameraOn) {
+	// 	image(capture, 0, 0, width, height);
+	// 	filter(THRESHOLD, 0.4);
+	// 	camButton.innerHTML = "Switch to mouse!";
+	// } else if (mouseIsPressed) {
+	// 	// *** strokeweight configuration ***
+	// 	strokeWeight(20);
+	// 	line(mouseX, mouseY, pmouseX, pmouseY);
+	// 	camButton.innerHTML = "Switch to camera!";
+	// }
+	if (mouseIsPressed) {
 		// *** strokeweight configuration ***
 		strokeWeight(20);
 		line(mouseX, mouseY, pmouseX, pmouseY);
-		camButton.innerHTML = "Switch to camera!";
 	}
 }
 
