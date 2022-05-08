@@ -1,7 +1,7 @@
 /* * Body */
 
 body {
-	font-size: 36px;
+	/* font-size: 36px; */
 	background: rgb(34, 34, 34);
 	color: white;
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -41,7 +41,7 @@ nav li a {
 	margin-top: 40px;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 25px;
+	font-size: 1.2em;
 }
 
 nav li :hover {
@@ -57,15 +57,15 @@ p {
 }
 
 h1 {
-	font-size: 80px;
+	font-size: 5em;
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 2.5em;
 }
 
 p {
-	font-size: 30px;
+	font-size: 1.5em;
 }
 
 a {
@@ -77,6 +77,10 @@ a:hover {
 	text-decoration: underline;
 }
 
+.resultsDiv {
+	font-size: 2em;
+}
+
 /* * Section */
 .feature-box {
 	display: flex;
@@ -84,7 +88,7 @@ a:hover {
 }
 
 .feature-box div {
-	font-size: 70px;
+	font-size: 3.5em;
 	text-align: center;
 	padding: 20px;
 	flex: 1 1 0px;
@@ -100,7 +104,7 @@ a:hover {
 /* * Button */
 button {
 	border-radius: 45px;
-	font-size: 20px;
+	font-size: 1.5em;
 	color: black;
 	background-color: white;
 	box-shadow: 0 8px 15px rgba(255, 255, 255, 0.26);
@@ -120,7 +124,7 @@ button:hover {
 .projectButton {
 	margin: auto;
 	display: block;
-	font-size: 30px;
+	font-size: 2em;
 	padding: 13px;
 }
 
@@ -132,7 +136,7 @@ footer,
 	height: 20px;
 	bottom: 0;
 	text-align: center;
-	font-size: 15px;
+	font-size: 1em;
 	padding: 10px;
 	color: white;
 	background-color: rgb(34, 34, 34);
@@ -205,8 +209,7 @@ section {
 }
 
 /* * Fix for annoying horizontal scroll on mobile */
-html,
-body {
+.antiscroll {
 	user-select: none;
 	touch-action: none;
 	-webkit-user-select: none;
